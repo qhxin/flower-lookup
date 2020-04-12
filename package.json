@@ -1,5 +1,5 @@
 {
-  "name": "onramp",
+  "name": "flower-lookup",
   "description": "Web Socket Server to Connect to P2P Networks",
   "version": "0.3.1",
   "dependencies": {
@@ -11,7 +11,7 @@
   "devDependencies": {},
   "main": "index.js",
   "bin": {
-    "onramp": "./bin/onramp"
+    "flower-lookup": "./bin/onramp"
   },
   "preferGlobal": true,
   "optionalDependencies": {},
