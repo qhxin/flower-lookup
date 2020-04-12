@@ -11,12 +11,12 @@
   "devDependencies": {},
   "main": "index.js",
   "bin": {
-    "flower-lookup": "./bin/onramp"
+    "flower-lookup": "./bin/flower-lookup"
   },
   "preferGlobal": true,
   "optionalDependencies": {},
   "engines": {
     "node": "*"
   },
-  "keywords": ["peer-to-peer", "websockets", "webrtc", "p2p", "plink", "p", "onramp", "mesh", "distributed"]
+  "keywords": ["flower-lookup", "peer-to-peer", "websockets", "webrtc", "p2p", "plink", "p", "onramp", "mesh", "distributed"]
 }
