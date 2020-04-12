@@ -3,24 +3,36 @@
   "description": "Web Socket Server to Connect to P2P Networks",
   "version": "0.3.2",
   "dependencies": {
-    "node-uuid": "~1.4.0",
-    "websocket": "~1.0.8",
     "commander": "~1.1.1",
-    "its": "~1.0.2"
+    "its": "~1.0.2",
+    "lodash": "^4.17.15",
+    "node-uuid": "~1.4.0",
+    "websocket": "~1.0.8"
   },
   "devDependencies": {},
   "main": "index.js",
   "bin": {
     "flower-lookup": "./bin/flower-lookup"
   },
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/qhxin/flower-lookup.git"
-	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qhxin/flower-lookup.git"
+  },
   "preferGlobal": true,
   "optionalDependencies": {},
   "engines": {
     "node": "*"
   },
-  "keywords": ["flower-lookup", "peer-to-peer", "websockets", "webrtc", "p2p", "plink", "p", "onramp", "mesh", "distributed"]
+  "keywords": [
+    "flower-lookup",
+    "peer-to-peer",
+    "websockets",
+    "webrtc",
+    "p2p",
+    "plink",
+    "p",
+    "onramp",
+    "mesh",
+    "distributed"
+  ]
 }

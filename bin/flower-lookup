@@ -6,15 +6,19 @@ const { version } = require('../package.json');
 
 app.version(version);
 
-app.option('-h, --host [host]', 'The host of the flower-lookup server');
+app.option('-u, --useHost [host]', 'The host of the flower-lookup server');
+app.option('-o, --allowOrigins [xxx,xxx]', 'The allowOrigins of the flower-lookup server');
+app.option('-s, --secret [secret hash]', 'The secret hash of the flower-garden client');
 
 app.parse(process.argv);
 
 (function main() {
-	const host = app.host;
+	const host = typeof app.useHost === 'string' ? app.useHost : undefined;
+	const allowOrigins = typeof app.allowOrigins === 'string' ? app.allowOrigins : undefined;
+	const secret = typeof app.secret === 'string' ? app.secret : undefined;
 
-	// Create the onramp instance at the localhost
-	const onramp = Onramp.create({ host });
+	// Create the onramp instance
+	const onramp = Onramp.create({ host, allowOrigins, secret });
 
 	configureBroadcast(onramp);
 }());

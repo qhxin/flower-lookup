@@ -4,6 +4,8 @@ flower-lookup 从 unsetbit/onramp fork，在此基础上进行了细微的修改
 onramp 是一个 websocket 服务器，通过它，浏览器之间可以建立对等链接。
 寻花是花园项目的桥接节点，可以帮助找到各个花朵。
 
+花园项目适合有限集合的浏览器点对点网络。
+
 ## 使用
 
 1. 安装 Node 0.10+
