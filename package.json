@@ -13,6 +13,10 @@
   "bin": {
     "flower-lookup": "./bin/flower-lookup"
   },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/qhxin/flower-lookup.git"
+	},
   "preferGlobal": true,
   "optionalDependencies": {},
   "engines": {
